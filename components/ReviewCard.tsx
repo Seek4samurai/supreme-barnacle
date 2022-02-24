@@ -27,7 +27,12 @@ const ReviewCard = (props: any) => {
         <div className={style.mainContainer}>
           <div className={style.header}>
             <div>
-              <Image src={img} width={"45px"} height={"45px"}></Image>
+              <Image
+                src={img}
+                alt={"profilePic"}
+                width={"45px"}
+                height={"45px"}
+              ></Image>
             </div>
             <div className={style.headerText}>
               <div className={style.name}>{name}</div>

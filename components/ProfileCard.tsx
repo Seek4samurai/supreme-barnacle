@@ -25,7 +25,12 @@ const ProfileCard = (props: any) => {
       <div id="mainContainer" className={style.mainContainer}>
         <div className={style.container}>
           {/* hard coded values here */}
-          <Image src={img} width={"400px"} height={"380px"}></Image>
+          <Image
+            src={img}
+            alt={"ProfilePic"}
+            width={"400px"}
+            height={"380px"}
+          ></Image>
           <div className={style.textArea}>
             <div>
               <span className={style.tagText}>{type}</span>

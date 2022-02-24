@@ -17,7 +17,7 @@ const style = {
   HamLiItem: `transition-all duration-1 text-white text-[2rem] p-[1rem] font-[serif] hover:tracking-[0.6rem]`,
 };
 
-const navbar = () => {
+const Navbar = () => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = () => {
@@ -73,4 +73,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

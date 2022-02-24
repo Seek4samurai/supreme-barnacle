@@ -134,7 +134,7 @@ const Home: NextPage = () => {
       <footer className={style.footer}>
         Made by&nbsp;
         <Link href={"https://www.github.com/seek4samurai"}>
-          <a href="https://www.github.com/seek4samurai" target={"_blank"}>
+          <a href="https://www.github.com/seek4samurai">
             <span className={style.footerName}>Gourav Singh Rawat</span>
           </a>
         </Link>
