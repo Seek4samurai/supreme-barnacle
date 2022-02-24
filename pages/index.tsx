@@ -10,31 +10,37 @@ import { UserData } from "../data/userData";
 
 const style = {
   // main content
-  main: `h-[100vh] overflow-x-hidden select-none`,
-  hero: `flex flex-col absolute top-[35%] left-[50%] -translate-x-[50%] text-white`,
+  main: `h-[70vh] overflow-x-hidden select-none`,
+
+  // Background Image here
+  imgContainer: `before:absolute z-[1] before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url(../public/images/MainBG.png)] before:bg-cover before:bg-center`,
+  imgGradient: `before:absolute z-[1] before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-gradient-to-t before:from-[#01001e] before:to-none`,
+
+  hero: `lg:translate-y-[60%] translate-y-[40%] flex flex-col items-center text-white`,
+  // absolute top-[35%] left-[50%] -translate-x-[50%] // Old config
 
   // first page content
-  textContainer: `flex flex-col mb-[10rem]`,
-  heroText: `text-[4.4rem] font-serif font-medium`,
-  sidekick: `text-[1.5rem] font-light w-[60%]`,
+  textContainer: `flex flex-col z-10 mb-[10rem] w-[80vw]`,
+  heroText: `md:text-[4.4rem] text-[3.5rem] font-serif font-medium`,
+  sidekick: `md:text-[1.5rem] text-[1rem] font-light w-[60%]`,
 
   // second page content
   secondPageHeader: `flex flex-row justify-between items-center text-[#ffec23] mt-[8rem] pl-[8rem] pr-[8rem] select-none`,
   secondPageHeaderTextDeco: `absolute pt-[0.5rem] underline text-[#0267ff]`,
-  secondPageHeaderText: `text-4xl text-white font-[serif]`,
-  secondPageContent: `flex flex-row justify-evenly `,
+  secondPageHeaderText: `z-[20] sm:text-4xl text-2xl text-white font-[serif]`,
+  secondPageContent: `flex flex-row pb-[3rem] overflow-x-scroll 2xl:overflow-x-clip`,
 
   // third page content
   thirdPageHeader: `flex flex-row justify-between items-center mt-[8rem] pl-[8rem] pr-[8rem] select-none`,
   thirdPageRight: `flex flex-row items-center text-[#c1c1c1]`,
   activePage: `text-white`,
-  arrow: `flex flex-row w-[8rem] justify-evenly text-2xl`, // arrow deco
-  arrowIndie: `transition-all duration-1 hover:scale-[1.4] hover:text-white`, // arrow deco on individual for hovers
+  arrow: `flex flex-row justify-evenly text-2xl`, // arrow deco
+  arrowIndie: `transition-all pl-[1rem] duration-1 hover:scale-[1.4] hover:text-white`, // arrow deco on individual for hovers
 
   // reviews here
   thirdPageHeaderTextDeco: `absolute pt-[0.5rem] underline text-[#0267ff]`,
-  thirdPageHeaderText: `text-4xl text-white font-[serif]`,
-  thirdPageContent: `flex flex-row justify-evenly `,
+  thirdPageHeaderText: `sm:text-4xl text-2xl text-white font-[serif]`,
+  thirdPageContent: `flex flex-row justify-none 2xl:justify-center pb-[3rem] overflow-x-scroll 2xl:overflow-x-auto `,
 
   // footer
   footer: `mt-[10rem] text-white flex justify-center pb-[2rem] select-none`,
@@ -45,6 +51,9 @@ const Home: NextPage = () => {
   return (
     <>
       <main className={style.main}>
+        <div className={style.imgContainer}>
+          <div className={style.imgGradient}></div>
+        </div>
         <Navbar></Navbar>
         <div className={style.hero}>
           <div className={style.textContainer}>
@@ -54,9 +63,9 @@ const Home: NextPage = () => {
               artists, and never miss out.
             </p>
           </div>
-          <ProgressCircles></ProgressCircles>
         </div>
       </main>
+      <ProgressCircles></ProgressCircles>
 
       <section>
         <div className={style.secondPageHeader}>

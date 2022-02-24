@@ -5,20 +5,20 @@ import { BiCalendarStar } from "react-icons/bi";
 import { VscDebugRestartFrame } from "react-icons/vsc";
 
 const style = {
-  container: `flex flex-row text-white`,
-  progressiveCircle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 border-[#ff42a0] rounded-full transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
-  circle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 rounded-full ml-[8rem] transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
+  container: `flex flex-row justify-around lg:flex-nowrap flex-wrap text-white`,
+  progressiveCircle: `flex flex-col items-center justify-center lg:w-[200px] lg:h-[200px] md:w-[130px] md:h-[130px] w-[90px] h-[90px] border-2 border-[#ff42a0] rounded-full transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
+  circle: `flex flex-col items-center justify-center lg:ml-[2rem] lg:w-[200px] lg:h-[200px] md:w-[130px] md:h-[130px] w-[90px] h-[90px] border-2 rounded-full transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
 
-  heartIcon: `text-[2.4rem] text-[#0267ff]`,
-  icon: `text-[2.4rem] `,
-  circleCount: `text-[2.6rem] font-[Vogue]`,
-  circleText: `font-[2]`,
+  heartIcon: `lg:text-[2.4rem] text-[1rem] text-[#0267ff]`,
+  icon: `lg:text-[2.4rem]`,
+  circleCount: `lg:text-[2.6rem] font-[Vogue]`,
+  circleText: `font-[2] lg:text-[1rem] text-[0.7rem]`,
 };
 
 const ProgressCircles = () => {
   return (
     <>
-      <div className={style.container}>
+      <div id="container" className={style.container}>
         <div className={style.progressiveCircle}>
           <div className={style.heartIcon}>
             <AiOutlineHeart></AiOutlineHeart>
@@ -48,6 +48,10 @@ const ProgressCircles = () => {
           <div className={style.circleText}>Label</div>
         </div>
       </div>
+      <style jsx>{`
+        #container {
+        }
+      `}</style>
     </>
   );
 };

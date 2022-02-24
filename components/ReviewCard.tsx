@@ -3,7 +3,7 @@ import React from "react";
 
 const style = {
   // container stylings
-  container: `mt-[4rem] border-4 border-[#fadf63] rounded-2xl w-1/4 h-[17rem] bg-[#010011] transition-all duration-1 select-none`,
+  container: `mt-[4rem] ml-[4rem] mr-[4rem] border-4 border-[#fadf63] rounded-2xl w-[26rem] h-[17rem] min-w-[24rem] bg-[#010011] transition-all duration-1 select-none`,
   mainContainer: `flex flex-col text-white`,
 
   // arranging headers

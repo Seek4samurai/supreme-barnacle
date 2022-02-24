@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { RiFileList3Line } from "react-icons/ri";
 
 const style = {
-  mainContainer: `mt-[4rem] transition-all duration-1 select-none`,
+  mainContainer: `mt-[4rem] ml-[2rem] mr-[4rem] transition-all duration-1 select-none`,
   container: `flex flex-col w-[360px] h-[500px] bg-[#080c5b] rounded-xl overflow-hidden`,
 
   textArea: `p-[1rem]`, // text fields inside user profile cards
