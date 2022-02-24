@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { RiFileList3Line } from "react-icons/ri";
 
 const style = {
-  mainContainer: `mt-[2rem]`,
+  mainContainer: `mt-[4rem] transition-all duration-1 select-none`,
   container: `flex flex-col w-[360px] h-[500px] bg-[#080c5b] rounded-xl overflow-hidden`,
 
   textArea: `p-[1rem]`, // text fields inside user profile cards
@@ -14,8 +14,8 @@ const style = {
 
   info: `flex flex-row justify-between pt-[2rem]`,
   moreInfo: `font-bold text-[#3a99ff] flex flex-row items-center group`,
-  arrow: `group-hover:pl-[0.4rem]`,
-  icon: `text-white text-3xl hover:scale-[1.3] hover:animate-pulse`,
+  arrow: `group-hover:pl-[1rem] transition-all duration-2`,
+  icon: `text-white text-3xl hover:scale-[1.3] hover:animate-pulse transition-all duration-1`,
 };
 
 const ProfileCard = (props: any) => {
@@ -48,9 +48,15 @@ const ProfileCard = (props: any) => {
       {/* shadow effect over userprofile card */}
       <style jsx>{`
         #mainContainer {
-          box-shadow: rgba(58, 153, 255, 0.8) 5px 5px,
+          box-shadow: rgba(58, 153, 255, 0.1) 5px 5px,
             rgba(58, 153, 255, 0.5) 10px 10px, rgba(58, 153, 255, 0.4) 15px 15px,
             rgba(58, 153, 255, 0.3) 20px 20px, rgba(58, 153, 255, 0.1) 25px 25px;
+          border-radius: 1rem;
+        }
+        #mainContainer:hover {
+          box-shadow: rgba(58, 153, 255, 0.1) 15px 15px,
+            rgba(58, 153, 255, 0.5) 15px 15px, rgba(58, 153, 255, 0.4) 31px 31px,
+            rgba(58, 153, 255, 0.3) 23px 23px, rgba(58, 153, 255, 0.1) 51px 51px;
         }
       `}</style>
     </>

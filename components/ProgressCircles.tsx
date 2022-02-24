@@ -6,8 +6,8 @@ import { VscDebugRestartFrame } from "react-icons/vsc";
 
 const style = {
   container: `flex flex-row text-white`,
-  progressiveCircle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 border-[#ff42a0] rounded-full`,
-  circle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 rounded-full ml-[8rem]`,
+  progressiveCircle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 border-[#ff42a0] rounded-full transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
+  circle: `flex flex-col items-center justify-center w-[200px] h-[200px] border-2 rounded-full ml-[8rem] transition-all duration-1 hover:scale-[1.1] blur-[2px] hover:blur-none`,
 
   heartIcon: `text-[2.4rem] text-[#0267ff]`,
   icon: `text-[2.4rem] `,

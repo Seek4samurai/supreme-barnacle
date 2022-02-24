@@ -8,7 +8,7 @@ const style = {
   imgContainer: `before:absolute z-[1] before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url(../public/images/MainBG.png)] before:bg-cover before:bg-center`,
   imgGradient: `before:absolute z-[1] before:content-[''] before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-gradient-to-t before:from-[#01001e] before:to-none`,
 
-  container: `relative text-white text-[1.1rem]`,
+  container: `relative text-white text-[1.1rem] select-none`,
   navbar: `w-[100vw] h-[3rem] flex flex-row items-center pl-[8rem] pr-[8rem]`,
   navText: `flex flex-row w-[100%] justify-end`,
 };
